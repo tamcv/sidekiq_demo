@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  root "home#index"
+
+  get "transactions" => "transactions#index"
+  put "transactions" => "transactions#put"
 end

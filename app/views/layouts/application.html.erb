@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <h1>Sidekiq Demo</h1>
+    <p>Click the button below to send transactions to received email.</p>
+    <form action="/transactions" method="put">
+      <input type="text" value="" name="received_email" placeholder="recived email">
+      <input type="submit" value="Export ">
+    </form>
     <%= yield %>
   </body>
 </html>
