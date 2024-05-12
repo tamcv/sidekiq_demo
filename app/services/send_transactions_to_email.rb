@@ -4,11 +4,11 @@ class SendTransactionsToEmail
   end
 
   def call
-    Rails.logger.info "Querying transactions"
+    Rails.logger.info "Querying transactions, takes 3s"
     sleep 3
-    Rails.logger.info "Building transactions"
+    Rails.logger.info "Building transactions, takes 3s"
     sleep 3
-    Rails.logger.info "Sending transactions to #{email}"
+    Rails.logger.info "Sending transactions to #{email}, takes 3s"
     sleep 3
     Rails.logger.info "Transactions sent"
   end
